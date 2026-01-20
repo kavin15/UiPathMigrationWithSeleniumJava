@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.DemoBlazeTests"/>
+      <class name="tests.TC01_LoginTest"/>
+      <class name="tests.TC02_ProductPageTest"/>
+      <class name="tests.TC03_AddToCart"/>
+	  <class name="tests.TC04_ContactPageTest"/>
+	  <class name="tests.TC05_endToEnd_ProductCheck"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

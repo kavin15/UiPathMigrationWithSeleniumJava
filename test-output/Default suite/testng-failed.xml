@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.DemoBlazeTests">
+      <class name="tests.TC05_endToEnd_ProductCheck">
         <methods>
           <include name="tearDown"/>
-          <include name="Login"/>
-          <include name="demoBlazeTest"/>
+          <include name="cartProductChecking"/>
           <include name="setup"/>
-          <include name="Logout"/>
         </methods>
-      </class> <!-- tests.DemoBlazeTests -->
+      </class> <!-- tests.TC05_endToEnd_ProductCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

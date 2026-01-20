@@ -1,33 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-18T11:44:55 IST" name="Default suite" finished-at="2025-11-18T11:45:17 IST" duration-ms="21491">
+  <suite started-at="2026-01-14T11:03:13 IST" name="Suite" finished-at="2026-01-14T11:05:19 IST" duration-ms="126530">
     <groups>
     </groups>
-    <test started-at="2025-11-18T11:44:55 IST" name="Default test" finished-at="2025-11-18T11:45:17 IST" duration-ms="21491">
-      <class name="tests.DemoBlazeTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DemoBlazeTests@5bf0d49]" started-at="2025-11-18T11:44:55 IST" name="setup" finished-at="2025-11-18T11:45:08 IST" duration-ms="12970" status="PASS">
+    <test started-at="2026-01-14T11:03:13 IST" name="Test" finished-at="2026-01-14T11:05:19 IST" duration-ms="126530">
+      <class name="tests.TC02_ProductPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TC02_ProductPageTest@3c46e67a]" started-at="2026-01-14T11:03:29 IST" name="setup" finished-at="2026-01-14T11:03:34 IST" duration-ms="4608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:tests.DemoBlazeTests@5bf0d49]" started-at="2025-11-18T11:45:08 IST" name="Login" finished-at="2025-11-18T11:45:09 IST" duration-ms="995" status="PASS">
+        <test-method signature="VerifyProductPage()[pri:0, instance:tests.TC02_ProductPageTest@3c46e67a]" started-at="2026-01-14T11:03:34 IST" name="VerifyProductPage" finished-at="2026-01-14T11:03:41 IST" duration-ms="7651" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="demoBlazeTest()[pri:0, instance:tests.DemoBlazeTests@5bf0d49]" started-at="2025-11-18T11:45:09 IST" name="demoBlazeTest" finished-at="2025-11-18T11:45:12 IST" duration-ms="3347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demoBlazeTest -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:tests.DemoBlazeTests@5bf0d49]" started-at="2025-11-18T11:45:12 IST" name="Logout" finished-at="2025-11-18T11:45:16 IST" duration-ms="3527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DemoBlazeTests@5bf0d49]" started-at="2025-11-18T11:45:16 IST" name="tearDown" finished-at="2025-11-18T11:45:17 IST" duration-ms="571" status="PASS">
+        </test-method> <!-- VerifyProductPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC02_ProductPageTest@3c46e67a]" started-at="2026-01-14T11:03:41 IST" name="tearDown" finished-at="2026-01-14T11:03:48 IST" duration-ms="6323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.DemoBlazeTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.TC02_ProductPageTest -->
+      <class name="tests.TC03_AddToCart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TC03_AddToCart@c730b35]" started-at="2026-01-14T11:03:48 IST" name="setup" finished-at="2026-01-14T11:03:51 IST" duration-ms="3726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCartVerify()[pri:0, instance:tests.TC03_AddToCart@c730b35]" started-at="2026-01-14T11:03:51 IST" name="addToCartVerify" finished-at="2026-01-14T11:04:05 IST" duration-ms="13849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartVerify -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC03_AddToCart@c730b35]" started-at="2026-01-14T11:04:05 IST" name="tearDown" finished-at="2026-01-14T11:04:10 IST" duration-ms="4396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TC03_AddToCart -->
+      <class name="tests.TC04_ContactPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TC04_ContactPageTest@206a70ef]" started-at="2026-01-14T11:04:10 IST" name="setup" finished-at="2026-01-14T11:04:14 IST" duration-ms="4055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddContactDetails()[pri:0, instance:tests.TC04_ContactPageTest@206a70ef]" started-at="2026-01-14T11:04:14 IST" name="testAddContactDetails" finished-at="2026-01-14T11:04:18 IST" duration-ms="3803" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: chrome=143.0.7499.193): Please fill out Username and Password.
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf8d4a50e0a3291ab6f620bf658915a5, findElement {value=//a[text()='Contact'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\kavin.s\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54552}, goog:processID: 25564, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54552/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf8d4a50e0a3291ab6f620bf658915a5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: chrome=143.0.7499.193): Please fill out Username and Password.
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf8d4a50e0a3291ab6f620bf658915a5, findElement {value=//a[text()='Contact'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\kavin.s\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54552}, goog:processID: 25564, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54552/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf8d4a50e0a3291ab6f620bf658915a5
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at Pages.ContactPage.contactButton(ContactPage.java:35)
+at tests.TC04_ContactPageTest.testAddContactDetails(TC04_ContactPageTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC04_ContactPageTest@206a70ef]" started-at="2026-01-14T11:04:18 IST" name="tearDown" finished-at="2026-01-14T11:04:27 IST" duration-ms="8829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TC04_ContactPageTest -->
+      <class name="tests.TC01_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TC01_LoginTest@1d296da]" started-at="2026-01-14T11:03:13 IST" name="setup" finished-at="2026-01-14T11:03:23 IST" duration-ms="10158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserLogin()[pri:0, instance:tests.TC01_LoginTest@1d296da]" started-at="2026-01-14T11:03:23 IST" name="verifyUserLogin" finished-at="2026-01-14T11:03:25 IST" duration-ms="2350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC01_LoginTest@1d296da]" started-at="2026-01-14T11:03:25 IST" name="tearDown" finished-at="2026-01-14T11:03:29 IST" duration-ms="3908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TC01_LoginTest -->
+      <class name="tests.TC05_endToEnd_ProductCheck">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TC05_endToEnd_ProductCheck@292b08d6]" started-at="2026-01-14T11:04:27 IST" name="setup" finished-at="2026-01-14T11:04:30 IST" duration-ms="3474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="cartProductChecking()[pri:0, instance:tests.TC05_endToEnd_ProductCheck@292b08d6]" started-at="2026-01-14T11:04:30 IST" name="cartProductChecking" finished-at="2026-01-14T11:05:15 IST" duration-ms="44543" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found [3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2] but found [3]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at tests.TC05_endToEnd_ProductCheck.cartProductChecking(TC05_endToEnd_ProductCheck.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartProductChecking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC05_endToEnd_ProductCheck@292b08d6]" started-at="2026-01-14T11:05:15 IST" name="tearDown" finished-at="2026-01-14T11:05:19 IST" duration-ms="4179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TC05_endToEnd_ProductCheck -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
